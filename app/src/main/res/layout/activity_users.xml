@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/search_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:inputType="textFilter|textNoSuggestions|textCapWords"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+
+    <Button
+        android:id="@+id/createTags_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Tags" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
